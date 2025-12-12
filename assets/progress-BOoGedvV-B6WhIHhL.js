@@ -1,0 +1,12 @@
+import{b as w,S as i,I as o,aR as j,aO as k,aQ as m}from"./index-C_crvORM.js";/**
+ * @license lucide-react v0.462.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const O=w("Trash2",[["path",{d:"M3 6h18",key:"d0wm0j"}],["path",{d:"M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6",key:"4alrt4"}],["path",{d:"M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2",key:"v07s0e"}],["line",{x1:"10",x2:"10",y1:"11",y2:"17",key:"1uufr5"}],["line",{x1:"14",x2:"14",y1:"11",y2:"17",key:"xtxkd"}]]);var d="Progress",v=100,[P]=k(d),[R,_]=P(d),p=i.forwardRef((a,e)=>{const{__scopeProgress:s,value:t=null,max:r,getValueLabel:N=I,...b}=a;(r||r===0)&&!f(r)&&console.error(M(`${r}`,"Progress"));const n=f(r)?r:v;t!==null&&!c(t,n)&&console.error(V(`${t}`,"Progress"));const l=c(t,n)?t:null,$=u(l)?N(l,n):void 0;return o.jsx(R,{scope:s,value:l,max:n,children:o.jsx(m.div,{"aria-valuemax":n,"aria-valuemin":0,"aria-valuenow":u(l)?l:void 0,"aria-valuetext":$,role:"progressbar","data-state":h(l,n),"data-value":l??void 0,"data-max":n,...b,ref:e})})});p.displayName=d;var x="ProgressIndicator",y=i.forwardRef((a,e)=>{const{__scopeProgress:s,...t}=a,r=_(x,s);return o.jsx(m.div,{"data-state":h(r.value,r.max),"data-value":r.value??void 0,"data-max":r.max,...t,ref:e})});y.displayName=x;function I(a,e){return`${Math.round(a/e*100)}%`}function h(a,e){return a==null?"indeterminate":a===e?"complete":"loading"}function u(a){return typeof a=="number"}function f(a){return u(a)&&!isNaN(a)&&a>0}function c(a,e){return u(a)&&!isNaN(a)&&a<=e&&a>=0}function M(a,e){return`Invalid prop \`max\` of value \`${a}\` supplied to \`${e}\`. Only numbers greater than 0 are valid max values. Defaulting to \`${v}\`.`}function V(a,e){return`Invalid prop \`value\` of value \`${a}\` supplied to \`${e}\`. The \`value\` prop must be:
+  - a positive number
+  - less than the value passed to \`max\` (or ${v} if no \`max\` prop is set)
+  - \`null\` or \`undefined\` if the progress is indeterminate.
+
+Defaulting to \`null\`.`}var g=p,T=y;const D=i.forwardRef(({className:a,value:e,...s},t)=>o.jsx(g,{ref:t,className:j("relative h-4 w-full overflow-hidden rounded-full bg-secondary",a),...s,children:o.jsx(T,{className:"h-full w-full flex-1 bg-primary transition-all",style:{transform:`translateX(-${100-(e||0)}%)`}})}));D.displayName=g.displayName;export{O as L,D as k};
+//# sourceMappingURL=progress-BOoGedvV-B6WhIHhL.js.map
