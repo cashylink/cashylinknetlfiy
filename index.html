@@ -80,8 +80,23 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="./assets/index-bCWIXU_s.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D5_0Es3j.css">
+    <script>
+      // إخفاء أزرار "تقاريرك" و"تصفير الشهر" في المعاينة الثابتة
+      (function() {
+        function hideMonthlyButtons() {
+          try {
+            document.querySelectorAll('button[title="تقاريرك"], button[title="تصفير الشهر"]').forEach(function(el) {
+              el.style.display = 'none';
+            });
+          } catch (_) {}
+        }
+        hideMonthlyButtons();
+        var mo = new MutationObserver(hideMonthlyButtons);
+        mo.observe(document.documentElement, { childList: true, subtree: true });
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-mBSeGJ8K.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BsQ0vdi0.css">
   <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
 
   <body class="notranslate">
