@@ -95,8 +95,8 @@
         mo.observe(document.documentElement, { childList: true, subtree: true });
       })();
     </script>
-    <script type="module" crossorigin src="./assets/index-F79wE54_.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CF_cwj-9.css">
+    <script type="module" crossorigin src="./assets/index-CgV0sHeM.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Cb-j8PFL.css">
   <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
 
   <body class="notranslate">
@@ -117,5 +117,15 @@
       <div class="app-loading-text">جاري التحميل...</div>
     </div>
     <div id="root"></div>
+    <script>
+      (function(){
+        try {
+          setTimeout(function(){
+            var el = document.getElementById('app-loading-screen');
+            if (el) { el.style.display = 'none'; try { el.remove(); } catch(e) {} }
+          }, 2500);
+        } catch (_) {}
+      })();
+    </script>
   </body>
 </html>
