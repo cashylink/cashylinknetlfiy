@@ -1,0 +1,2 @@
+import{a as r,k as n,r as d}from"./index-DhbnydJl.js";const o=()=>{const e=r(),[a]=n();return d.useEffect(()=>{const s=a.get("edit")==="1",t=a.get("id");s&&t?e("/user/dashboard",{replace:!0,state:{openWalletManagement:!0,walletManagementMode:"edit",editingWalletId:t}}):e("/user/dashboard",{replace:!0,state:{openWalletManagement:!0,walletManagementMode:"add"}})},[e,a]),null};export{o as default};
+//# sourceMappingURL=WalletAdditionPage-D8TejFVF.js.map
