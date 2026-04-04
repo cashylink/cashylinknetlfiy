@@ -1,0 +1,2 @@
+const c="wallet_selection_pin_required";function a(e){return e?`${c}_${e}`:c}const n={isEnabled(e){try{return localStorage.getItem(a(e))==="true"}catch{return!1}},setEnabled(e,t){try{localStorage.setItem(a(t),e?"true":"false")}catch{}},isFeatureEnabled(e,t){try{const r=`${a(t)}:${e}`;return localStorage.getItem(r)==="true"}catch{return!1}},setFeatureEnabled(e,t,r){try{const l=`${a(r)}:${e}`;localStorage.setItem(l,t?"true":"false")}catch{}}};export{n as w};
+//# sourceMappingURL=walletSelectionPinService-CAoAFGy9.js.map
